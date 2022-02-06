@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wordCounter</title>
+
+     <script type="text/javascript">
+        
+        function wordCounter(){
+        
+        var paragraphs = document.querySelector("#text-area").value.split(' ')
+
+        console.log(paragraphs)
+        
+        alert("Kelime Sayısı:" + " " +paragraphs.length);
+        
+        }
+
+    </script>
+
+    
+</head>
+<body style="background-color:lavender; cursor: pointer; justify-content: center;">
+    <h1 style="text-align: center;  text-shadow: -1px 0 rgb(205, 84, 209), 0 4px rgb(205, 84, 209), 1px 0 rgb(205, 84, 209), 0 -1px rgb(205, 84, 209);">Word Counter</h1>
+    <div>
+        <textarea name="" id="text-area" cols="175" rows="40"></textarea>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <button style="background-color: black; color: white;  font-size: 16px;" onclick="wordCounter()">Kelime Sayısı Hesapla</button>
+    </div>
+
+</body>
+</html>
